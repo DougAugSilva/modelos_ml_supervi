@@ -12,6 +12,11 @@
     - `git remote add origin git@github.com:DougAugSilva/modelos_ml_supervi.git`
     - `git branch -M main`
     - `git push -u origin main`
+  
+[Extra] Consertando erros de sincronização da `main`: As vezes ao criar o arquivo README.md a main do repositório pode estar difernet da main do computador, neste caso é preciso realizar um `pull` antes de dar push nos arquivos locais. Assim, executamos: <br>
+`~$: git pull --rebase origin main` <br>
+`~$: git push origin main`
+E depois podemos executar `git push -u origin main` normalmente.
 
 ## Criando ambiente virtual python
 
